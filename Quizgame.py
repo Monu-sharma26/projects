@@ -42,4 +42,4 @@ if st.button("Submit"):
     else:
         st.write("Better luck next time!")
 
-st.sidebar.write("Quiz Menu")
+st.sidebar.markdown("Quiz Menu")
