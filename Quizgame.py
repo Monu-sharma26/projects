@@ -3,7 +3,9 @@ import streamlit as st
 st.title("Welcome to the Quiz Game")
 
 ques = [
-    "Q1: First Alphabet of English language..?\nA) d  B) e  C) a  D) f",
+    "Q1: First Alphabet of English language..?
+    \n  A) d  B) e  
+        C) a  D) f",
     "Q2: Which of these is a mammal..?\nA) Duck  B) Hen  C) Owl  D) Whale",
     "Q3: Which is the largest ocean in the world?\nA) Indian  B) Pacific  C) Arctic  D) Atlantic",
     "Q4: Which is the National animal of India..?\nA) Fox  B) Cow  C) Tiger  D) Cat",
