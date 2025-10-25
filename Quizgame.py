@@ -17,7 +17,7 @@ ques = [
 ]
 print(ques)
 for i in range(len(ques)):
-    print(ques[i])
+    st.write(ques[i])
 # Empty list to store user answers
 # AL = []
 # for i in range(len(ques)):
