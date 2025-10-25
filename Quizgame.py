@@ -67,3 +67,5 @@ elif Score == 6:
 else:
     print("Better Luck next time....")
 print("\nYour Answers:", AL)
+
+st.sidebar.markdown("Restart")
