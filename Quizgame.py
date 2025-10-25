@@ -16,6 +16,8 @@ ques = [
     "Q10: Which festival is known as the festival of lights?\nA) Holi\tB) Diwali\tC) Eid\tD) Christmas"
 ]
 print(ques)
+for i in range(len(ques)):
+    print(ques[i])
 # Empty list to store user answers
 # AL = []
 # for i in range(len(ques)):
