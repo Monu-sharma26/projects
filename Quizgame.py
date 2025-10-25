@@ -15,7 +15,7 @@ ques = [
     "Q9: Which is the largest animal on Earth?\nA) Elephant\tB) Blue Whale\tC) Giraffe\tD) Shark",
     "Q10: Which festival is known as the festival of lights?\nA) Holi\tB) Diwali\tC) Eid\tD) Christmas"
 ]
-print(ques[i])
+print(ques)
 # Empty list to store user answers
 # AL = []
 # for i in range(len(ques)):
