@@ -20,7 +20,7 @@ ques = [
 AL = []
 for i in range(len(ques)):
     print(ques[i])
-    ans = st.text_input("Enter your choice (A/B/C/D): ")  # .strip().upper()
+    ans = st.text_input("Enter your choice (A/B/C/D): ")  
     AL.append(ans)
     print("<....................................>")
 
