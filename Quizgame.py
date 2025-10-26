@@ -17,7 +17,7 @@ def game():
         "Q10: Which festival is known as the festival of lights?\nA) Holi\tB) Diwali\tC) Eid\tD) Christmas"
         ]
 
-    Score=0
+    
 # Empty list to store user answers
     AL = []
     for i in range(len(ques)):
@@ -25,7 +25,8 @@ def game():
         ans = st.text_input("Enter your choice (A/B/C/D): ",key = i)  
         AL.append(ans)
         print("<....................................>")
-
+    Score=0
+    
     if AL[0] == 'C' or AL[0] == "c":
         Score += 1
     if AL[1] == 'D' or AL[1] == "d":
