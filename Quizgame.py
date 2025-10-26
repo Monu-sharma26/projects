@@ -70,5 +70,5 @@ def game():
 
     opt = st.sidebar.checkbox("RESET")
 # game()
-if opt==1:
+if opt==True:
     game()
