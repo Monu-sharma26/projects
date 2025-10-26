@@ -1,4 +1,4 @@
-q# List of 10 questions
+# List of 10 questions
 import  streamlit as st
 
 def game():
