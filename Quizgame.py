@@ -58,11 +58,10 @@ elif Score == 9:
 elif Score == 8:
     st.balloons()
     print("You have passed the Quiz with 8 points and got Third position")
-elif Score == 7:
+elif Score > 7:
     st.balloons()
     print("You have passed the Quiz with 7 points and got Fourth position")
 elif Score == 6:
-    st.balloons()
     print("You passed the quiz. Good effort!")
 else:
     print("Better Luck next time....")
