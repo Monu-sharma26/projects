@@ -19,10 +19,6 @@ if st.sidebar.button("🔄 Restart Quiz"):
     st.session_state.clear()
     st.rerun()
 
-if st.sidebar.button("🔄 Restart Quiz"):
-    st.session_state.clear()
-    st.session_state.restart = True
-    st.experimental_rerun()
 # Empty list to store user answers
 AL = []
 for i in range(len(ques)):
@@ -62,10 +58,10 @@ if Score == 10:
 elif Score == 9:
     st.balloons()
     st.write("Excellent performance! Keep it up!")
-elif Score == 8:
+elif Score > 8:
     st.balloons()
     st.write("You have passed the Quiz with 8 points and got Third position")
-elif Score > 7:
+elif Score == 7:
     st.balloons()
     st.write("You have passed the Quiz with 7 points and got Fourth position")
 elif Score == 6:
