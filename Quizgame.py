@@ -68,7 +68,7 @@ def game():
     st.write("your scored : ",Score)
     st.write("\nYour Answers:", AL)
 
-     st.sidebar.markdown("Restart")
+    st.sidebar.markdown("Restart")
 game()
 if sidebar==1:
     game()
