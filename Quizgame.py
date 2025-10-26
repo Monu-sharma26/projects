@@ -15,9 +15,7 @@ ques = [
     "Q9: Which is the largest animal on Earth?\nA) Elephant\tB) Blue Whale\tC) Giraffe\tD) Shark",
     "Q10: Which festival is known as the festival of lights?\nA) Holi\tB) Diwali\tC) Eid\tD) Christmas"
 ]
-if st.sidebar.button("🔄 Restart Quiz"):
-    st.session_state.clear()
-    st.rerun()
+
 
 # Empty list to store user answers
 AL = []
@@ -58,11 +56,9 @@ if Score == 10:
 elif Score == 9:
     st.balloons()
     st.write("Excellent performance! Keep it up!")
-elif Score > 8:
-    st.balloons()
+elif Score == 8:
     st.write("You have passed the Quiz with 8 points and got Third position")
 elif Score == 7:
-    st.balloons()
     st.write("You have passed the Quiz with 7 points and got Fourth position")
 elif Score == 6:
     st.write("You passed the quiz. Good effort!")
@@ -71,4 +67,4 @@ else:
 st.write("your scored : ",Score)
 st.write("\nYour Answers:", AL)
 
-# st.sidebar.markdown("Restart")
+ st.sidebar.markdown("Restart")
