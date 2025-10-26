@@ -70,6 +70,7 @@ def game():
     st.write("\nYour Answers:", AL)
 st.sidebar.markdown("RESET MENU")
 opt = st.sidebar.button("Reset Quiz")
+game()
 # game()
 # if opt==1:
 #     game()
