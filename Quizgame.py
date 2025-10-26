@@ -1,6 +1,7 @@
 # List of 10 questions
 import  streamlit as st
-
+AL = []
+    
 def game():
     
     st.write("Welcome to the quiz game...")
@@ -19,8 +20,7 @@ def game():
 
     
 # Empty list to store user answers
-    AL = []
-    AL.clear()
+    
     for i in range(len(ques)):
         st.write(ques[i])
         ans = st.text_input("Enter your choice (A/B/C/D): ",key = i)  
@@ -74,6 +74,7 @@ opt = st.sidebar.button("Reset Quiz")
 # game()
 # game()
 if opt==1:
+    AL.clear()
     game()
     
      
