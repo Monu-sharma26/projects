@@ -72,3 +72,4 @@ opt = st.sidebar.button("Reset Quiz")
 # game()
 if opt==1:
     game()
+game()
