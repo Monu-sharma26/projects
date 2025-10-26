@@ -2,7 +2,7 @@
 import  streamlit as st
 
 def game():
-    AL.clear()
+    
     st.write("Welcome to the quiz game...")
     ques = [
         "Q1: First Alphabet of English language..?\nA) d\tB) e\nC) a\tD) f",
@@ -20,6 +20,7 @@ def game():
     
 # Empty list to store user answers
     AL = []
+    AL.clear()
     for i in range(len(ques)):
         st.write(ques[i])
         ans = st.text_input("Enter your choice (A/B/C/D): ",key = i)  
@@ -70,7 +71,7 @@ def game():
     st.write("\nYour Answers:", AL)
 st.sidebar.markdown("RESET MENU")
 opt = st.sidebar.button("Reset Quiz")
-game()
+# game()
 # game()
 if opt==1:
     game()
