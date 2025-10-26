@@ -19,7 +19,7 @@ ques = [
 # Empty list to store user answers
 AL = []
 for i in range(len(ques)):
-    st.write(ques)
+    st.write(ques[i])
     ans = st.text_input("Enter your choice (A/B/C/D): ")  
     AL.append(ans)
     print("<....................................>")
