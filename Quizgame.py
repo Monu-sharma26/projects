@@ -65,7 +65,7 @@ elif Score == 6:
     print("You passed the quiz. Good effort!")
 else:
     print("Better Luck next time....")
-print("your scored : ",Score)
-print("\nYour Answers:", AL)
+st.write("your scored : ",Score)
+st.write("\nYour Answers:", AL)
 
 st.sidebar.markdown("Restart")
