@@ -26,8 +26,7 @@ def game():
         AL.append(ans)
         print("<....................................>")
 
-    Score = 0
-    game()
+    
 
     if AL[0] == 'C' or AL[0] == "c":
         Score += 1
@@ -66,6 +65,8 @@ def game():
         st.write("You passed the quiz. Good effort!")
     else:
         st.write("Better Luck next time....")
+    Score = 0
+    game()
     st.write("your scored : ",Score)
     st.write("\nYour Answers:", AL)
 st.sidebar.markdown("RESET MENU")
