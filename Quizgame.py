@@ -27,6 +27,7 @@ def game():
         print("<....................................>")
 
     Score = 0
+    game()
 
     if AL[0] == 'C' or AL[0] == "c":
         Score += 1
@@ -72,5 +73,3 @@ opt = st.sidebar.button("Reset Quiz")
 # game()
 if opt==1:
     game()
-score = 0
-game()
