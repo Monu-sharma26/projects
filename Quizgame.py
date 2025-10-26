@@ -25,8 +25,7 @@ def game():
         ans = st.text_input("Enter your choice (A/B/C/D): ",key = i)  
         AL.append(ans)
         print("<....................................>")
-
-    
+    Score = 0
 
     if AL[0] == 'C' or AL[0] == "c":
         Score += 1
@@ -73,5 +72,5 @@ st.sidebar.markdown("RESET MENU")
 opt = st.sidebar.button("Reset Quiz")
 # game()
 if opt==1:
-     Score = 0
      game()
+game()
