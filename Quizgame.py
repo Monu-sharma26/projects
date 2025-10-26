@@ -68,7 +68,8 @@ def game():
     st.write("your scored : ",Score)
     st.write("\nYour Answers:", AL)
 
-    opt = st.sidebar.checkbox("RESET")
+    st.sidebar.markdown("RESET MENU")
+    opt = st.sidebar.button("Reset Quiz")
 # game()
 if opt==True:
     game()
