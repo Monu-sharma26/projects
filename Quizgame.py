@@ -65,12 +65,13 @@ def game():
         st.write("You passed the quiz. Good effort!")
     else:
         st.write("Better Luck next time....")
-    Score = 0
-    game()
+   
+    # game()
     st.write("your scored : ",Score)
     st.write("\nYour Answers:", AL)
 st.sidebar.markdown("RESET MENU")
 opt = st.sidebar.button("Reset Quiz")
 # game()
 if opt==1:
+     Score = 0
     game()
