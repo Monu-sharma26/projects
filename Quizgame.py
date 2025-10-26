@@ -15,7 +15,9 @@ ques = [
     "Q9: Which is the largest animal on Earth?\nA) Elephant\tB) Blue Whale\tC) Giraffe\tD) Shark",
     "Q10: Which festival is known as the festival of lights?\nA) Holi\tB) Diwali\tC) Eid\tD) Christmas"
 ]
-
+if st.sidebar.button("🔄 Restart Quiz"):
+    st.session_state.clear()
+    st.rerun()
 # Empty list to store user answers
 AL = []
 for i in range(len(ques)):
@@ -68,4 +70,4 @@ else:
 st.write("your scored : ",Score)
 st.write("\nYour Answers:", AL)
 
-st.sidebar.markdown("Restart")
+# st.sidebar.markdown("Restart")
