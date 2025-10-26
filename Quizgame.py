@@ -68,7 +68,7 @@ def game():
     st.write("your scored : ",Score)
     st.write("\nYour Answers:", AL)
 
-    opt = st.sidebar.markdown("Restart")
-game()
+    opt = st.sidebar.checkbox("RESET")
+# game()
 if opt==1:
     game()
