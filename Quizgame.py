@@ -2,7 +2,7 @@
 import  streamlit as st
 
 def game():
-    
+    Score=0
     st.write("Welcome to the quiz game...")
     ques = [
         "Q1: First Alphabet of English language..?\nA) d\tB) e\nC) a\tD) f",
@@ -25,7 +25,6 @@ def game():
         ans = st.text_input("Enter your choice (A/B/C/D): ",key = i)  
         AL.append(ans)
         print("<....................................>")
-    Score = 0
 
     if AL[0] == 'C' or AL[0] == "c":
         Score += 1
@@ -73,7 +72,5 @@ opt = st.sidebar.button("Reset Quiz")
 # game()
 if opt==1:
     game()
-    score=0
+    
      
-     
-game()
