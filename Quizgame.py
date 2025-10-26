@@ -18,6 +18,11 @@ ques = [
 if st.sidebar.button("🔄 Restart Quiz"):
     st.session_state.clear()
     st.rerun()
+
+if st.sidebar.button("🔄 Restart Quiz"):
+    st.session_state.clear()
+    st.session_state.restart = True
+    st.experimental_rerun()
 # Empty list to store user answers
 AL = []
 for i in range(len(ques)):
