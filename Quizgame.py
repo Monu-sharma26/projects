@@ -53,20 +53,20 @@ print(f"\nYou scored {Score} out of {len(ques)}")
 
 if Score == 10:
     st.balloons()
-    print("Outstanding! You’re the topper of this quiz!")
+    st.write("Outstanding! You’re the topper of this quiz!")
 elif Score == 9:
     st.balloons()
-    print("Excellent performance! Keep it up!")
+    st.write("Excellent performance! Keep it up!")
 elif Score == 8:
     st.balloons()
-    print("You have passed the Quiz with 8 points and got Third position")
+    st.write("You have passed the Quiz with 8 points and got Third position")
 elif Score > 7:
     st.balloons()
-    print("You have passed the Quiz with 7 points and got Fourth position")
+    st.write("You have passed the Quiz with 7 points and got Fourth position")
 elif Score == 6:
-    print("You passed the quiz. Good effort!")
+    st.write("You passed the quiz. Good effort!")
 else:
-    print("Better Luck next time....")
+    st.write("Better Luck next time....")
 st.write("your scored : ",Score)
 st.write("\nYour Answers:", AL)
 
