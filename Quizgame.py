@@ -1,4 +1,4 @@
-# List of 10 questions
+q# List of 10 questions
 import  streamlit as st
 
 def game():
@@ -72,4 +72,5 @@ opt = st.sidebar.button("Reset Quiz")
 # game()
 if opt==1:
     game()
+score = 0
 game()
