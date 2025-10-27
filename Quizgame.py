@@ -24,11 +24,10 @@ def game():
     for i in range(len(ques)):
         st.write(ques[i])
         ans = st.text_input("Enter your choice (A/B/C/D): ",key = i) 
-        st.button("submit")
         AL.append(ans)
         print("<....................................>")
     Score=0
-    
+    st.button("submit")
     if AL[0] == 'C' or AL[0] == "c":
         Score += 1
     if AL[1] == 'D' or AL[1] == "d":
