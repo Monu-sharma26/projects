@@ -1,7 +1,6 @@
 # List of 10 questions
 import  streamlit as st
 st.title("🎯 Simple Quiz Game")
-st.write("Welcome to the quiz game...")
 AL = []
     
 def game():
@@ -13,9 +12,9 @@ def game():
         "Q3: Which is the largest ocean in the world?\nA) Indian ocean\tB) Pacific ocean\nC) Arctic ocean\tD) Atlantic ocean",
         "Q4: Which is the National animal of India..?\nA) Fox\tB) Cow\nC) Tiger\tD) Cat",
         "Q5: How many continents in the world..?\nA) 4\tB) 7\nC) 8\tD) 9",
-        "Q6: Which planet is known as the Red Planet?\nA) Earth\tB) Mars\tC) Jupiter\tD) Saturn",
-        "Q7: Which gas do plants absorb from the atmosphere?\nA) Oxygen\tB) Carbon Dioxide\tC) Nitrogen\tD) Hydrogen",
-        "Q8: What is the capital of India?\nA) Mumbai\tB) Delhi\tC) Kolkata\tD) Chennai",
+        "Q6: Which planet is known as the Red Planet?\nA) Earth\tB) Saturn\tC) Jupiter\tD) Mars",
+        "Q7: Which gas do plants absorb from the atmosphere?\nA) Oxygen\tB) Nitrogen\tC) Carbon Dioxide\tD) Hydrogen",
+        "Q8: What is the capital of India?\nA) Delhi\tB) Mumbai\tC) Kolkata\tD) Chennai",
         "Q9: Which is the largest animal on Earth?\nA) Elephant\tB) Blue Whale\tC) Giraffe\tD) Shark",
         "Q10: Which festival is known as the festival of lights?\nA) Holi\tB) Diwali\tC) Eid\tD) Christmas"
         ]
@@ -40,11 +39,11 @@ def game():
         Score += 1
     if AL[4] == 'B' or AL[4] == "b":
         Score += 1
-    if AL[5] == 'B' or AL[5] == "b":
+    if AL[5] == 'D' or AL[5] == "d":
         Score += 1
-    if AL[6] == 'B' or AL[6] == "b":
+    if AL[6] == 'C' or AL[6] == "c":
         Score += 1
-    if AL[7] == 'B' or AL[7] == "b":
+    if AL[7] == 'A' or AL[7] == "a":
         Score += 1
     if AL[8] == 'B' or AL[8] == "b":
         Score += 1
@@ -69,7 +68,8 @@ def game():
         st.write("Better Luck next time....")
    
     # game()
-    st.write("your scored : ",Score)
+    st.write(f"✅ You scored {Score} out of {len(ques)}")
+    st.write("Correct answers is : C, D, B, C, B, D, C, A, B, B")
     st.write("\nYour Answers:", AL)
 st.sidebar.markdown("RESET MENU")
 opt = st.sidebar.button("Reset Quiz")
