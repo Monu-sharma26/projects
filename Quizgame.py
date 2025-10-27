@@ -7,10 +7,14 @@ def game():
     
     st.write("Welcome to the quiz game...")
     ques = [
-        "Q1: First Alphabet of English language..?\nA) d\tB) e\nC) a\tD) f",
-        "Q2: Which of these is a mammal..?\nA) Duck\tB) Hen\nC) Owl\tD) Whale",
-        "Q3: Which is the largest ocean in the world?\nA) Indian ocean\tB) Pacific ocean\nC) Arctic ocean\tD) Atlantic ocean",
-        "Q4: Which is the National animal of India..?\nA) Fox\tB) Cow\nC) Tiger\tD) Cat",
+        "Q1: First Alphabet of English language..?",
+        "\nA) d\tB) e\nC) a\tD) f",
+        "Q2: Which of these is a mammal..?",
+        "\nA) Duck\tB) Hen\nC) Owl\tD) Whale",
+        "Q3: Which is the largest ocean in the world",
+        "?\nA) Indian ocean\tB) Pacific ocean\nC) Arctic ocean\tD) Atlantic ocean",
+        "Q4: Which is the National animal of India..?",
+        "\nA) Fox\tB) Cow\nC) Tiger\tD) Cat",
         "Q5: How many continents in the world..?\nA) 4\tB) 7\nC) 8\tD) 9",
         "Q6: Which planet is known as the Red Planet?\nA) Earth\tB) Saturn\tC) Jupiter\tD) Mars",
         "Q7: Which gas do plants absorb from the atmosphere?\nA) Oxygen\tB) Nitrogen\tC) Carbon Dioxide\tD) Hydrogen",
