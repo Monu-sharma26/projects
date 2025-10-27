@@ -1,5 +1,7 @@
 # List of 10 questions
 import  streamlit as st
+st.title("🎯 Simple Quiz Game")
+st.write("Welcome to the quiz game...")
 AL = []
     
 def game():
