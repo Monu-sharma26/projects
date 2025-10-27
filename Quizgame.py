@@ -23,7 +23,8 @@ def game():
     
     for i in range(len(ques)):
         st.write(ques[i])
-        ans = st.text_input("Enter your choice (A/B/C/D): ",key = i)  
+        ans = st.text_input("Enter your choice (A/B/C/D): ",key = i) 
+        btn = st.button("submit")
         AL.append(ans)
         print("<....................................>")
     Score=0
