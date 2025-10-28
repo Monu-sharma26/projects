@@ -1,34 +1,46 @@
 # List of 10 questions
 import  streamlit as st
 st.title("🎯 Simple Quiz Game")
-AL = []
+st.write("Welcome to the quiz game...")
+
     
 def game():
-    
-    st.write("Welcome to the quiz game...")
-    ques = [
-        "Q1: First Alphabet of English language..?\nA) d\tB) e\nC) a\tD) f",
-        "Q2: Which of these is a mammal..?\nA) Duck\tB) Hen\nC) Owl\tD) Whale",
-        "Q3: Which is the largest ocean in the world?\nA) Indian ocean\tB) Pacific ocean\nC) Arctic ocean\tD) Atlantic ocean",
-        "Q4: Which is the National animal of India..?\nA) Fox\tB) Cow\nC) Tiger\tD) Cat",
-        "Q5: How many continents in the world..?\nA) 4\tB) 7\nC) 8\tD) 9",
-        "Q6: Which planet is known as the Red Planet?\nA) Earth\tB) Saturn\tC) Jupiter\tD) Mars",
-        "Q7: Which gas do plants absorb from the atmosphere?\nA) Oxygen\tB) Nitrogen\tC) Carbon Dioxide\tD) Hydrogen",
-        "Q8: What is the capital of India?\nA) Delhi\tB) Mumbai\tC) Kolkata\tD) Chennai",
-        "Q9: Which is the largest animal on Earth?\nA) Elephant\tB) Blue Whale\tC) Giraffe\tD) Shark",
-        "Q10: Which festival is known as the festival of lights?\nA) Holi\tB) Diwali\tC) Eid\tD) Christmas"
-        ]
 
+    Ques = ( "Q1: First Alphabet of English language..?",
+            "Q2: Which of these is a mammal..?",
+            "Q3: Which is the largest ocean in the world?",
+            "Q4: Which is the National animal of India..?",
+            "Q5: How many continents in the world..?",
+            "Q6: Which planet is known as the Red Planet?",
+            "Q7: Which gas do plants absorb from the atmosphere?",
+            "Q8: What is the capital of India?",
+            "Q9: Which is the largest animal on Earth?",
+            "Q10: Which festival is known as the festival of lights?")
+    Answers = (("A) d", "B) e", "C) a", "D) f"),
+              ("A) Duck", "B) Hen", "C) Owl", "D) Whale"),
+              ("A) Indian ocean", "B) Pacific ocean", "C) Arctic ocean", "D) Atlantic ocean"),
+              ("A) Fox", "B) Cow", "C) Tiger", "D) Cat"),
+              ("A) 4", "B) 7", "C) 8", "D) 9"),
+              ("A) Earth", "B) Saturn", "C) Jupiter", "D) Mars"),
+              ("A) Oxygen", "B) Nitrogen", "C) Carbon Dioxide", "D) Hydrogen"),
+              ("A) Delhi", "B) Mumbai", "C) Kolkata", "D) Chennai"),
+              ("A) Elephant", "B) Blue Whale", "C) Giraffe", "D) Shark"),
+              ("A) Holi", "B) Diwali", "C) Eid", "D) Christmas"))
+    
+    AL = []
+    Score = 0
+    Ques_num = 0
     
 # Empty list to store user answers
     
-    for i in range(len(ques)):
-        st.write(ques[i])
+    for i in range(len(Ques)):
+        sr.write("----------------------")
+        st.write(Ques[i])
+        for j in Answers[Ques_num] 
         ans = st.text_input("Enter your choice (A/B/C/D): ",key = i) 
         AL.append(ans)
-        print("<....................................>")
-    Score=0
-    st.button("submit")
+        st.write("<---------------------->")
+        
     if AL[0] == 'C' or AL[0] == "c":
         Score += 1
     if AL[1] == 'D' or AL[1] == "d":
@@ -50,7 +62,7 @@ def game():
     if AL[9] == 'B' or AL[9] == "b":
         Score += 1
 
-    print(f"\nYou scored {Score} out of {len(ques)}")
+    st.write(f"\nYou scored {Score} out of {len(ques)}")
 
     if Score == 10:
         st.balloons()
