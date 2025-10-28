@@ -56,7 +56,7 @@ def game():
     #     st.write("<---------------------->")
 
     if st.button("Submit Quiz"):
-        Score = 0
+        
         if AL[0] == 'C' or AL[0] == "c":
             Score += 1
         if AL[1] == 'D' or AL[1] == "d":
