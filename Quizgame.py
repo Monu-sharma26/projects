@@ -94,7 +94,7 @@ def game():
 st.sidebar.markdown("RESET MENU")
 if st.sidebar.button("🔄 Reset Quiz"):
     st.session_state.clear()
-    st.experimental_rerun()
+    st.rerun()
 game()
  
  
