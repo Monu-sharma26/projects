@@ -91,10 +91,10 @@ def game():
         st.write(f"✅ You scored {Score} out of {len(Ques)}")
         st.write("Correct answers is : C, D, B, C, B, D, C, A, B, B")
         st.write("\nYour Answers:", AL)
+st.sidebar.markdown("RESET MENU")
+opt = st.sidebar.button("Reset Quiz")
 game()
-# st.sidebar.markdown("RESET MENU")
-# opt = st.sidebar.button("Reset Quiz")
-# game()
+ 
 # if opt==1:
 #     AL.clear()
 #     game()
