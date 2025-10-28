@@ -91,10 +91,10 @@ def game():
         st.write(f"✅ You scored {Score} out of {len(Ques)}")
         st.write("Correct answers is : C, D, B, C, B, D, C, A, B, B")
         st.write("\nYour Answers:", AL)
-if "reset" not in st.session_state:
-    st.session_state.reset = False
+
 st.sidebar.markdown("RESET MENU")
 if st.sidebar.button("🔄 Reset Quiz"):
+    AL.clear[]
     st.session_state.clear()
     st.rerun()
 game()
