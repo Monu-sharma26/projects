@@ -33,15 +33,27 @@ def game():
     Ques_num = 0
     
 # Empty list to store user answers
-    
     for i in range(len(Ques)):
-        st.write("----------------------")
-        st.write(Ques[i])
-        for j in Answers[i]:
-            st.write(Answers)
-        ans = st.text_input("Enter your choice (A/B/C/D): ",key = i) 
-        AL.append(ans)
-        st.write("<---------------------->")
+    st.write("----------------------")
+    st.write(Ques[i])
+    
+    # Show each option one by one
+    for opt in Answers[i]:
+        st.write(opt)
+    
+    # Take user answer
+    ans = st.text_input(f"Enter your choice (A/B/C/D) for Q{i+1}:", key=f"q{i}")
+    AL.append(ans)
+
+
+    # for i in range(len(Ques)):
+    #     st.write("----------------------")
+    #     st.write(Ques[i])
+    #     for j in Answers[i]:
+    #         st.write(Answers)
+    #     ans = st.text_input("Enter your choice (A/B/C/D): ",key = i) 
+    #     AL.append(ans)
+    #     st.write("<---------------------->")
 
     if st.button("Submit Quiz"):
         Score = 0
