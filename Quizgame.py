@@ -93,10 +93,11 @@ def game():
         st.write("\nYour Answers:", AL)
 st.sidebar.markdown("RESET MENU")
 opt = st.sidebar.button("Reset Quiz")
-game()
- 
- if opt==1:
+if opt==1:
      AL.clear()
      game()
+game()
+ 
+ 
     
      
