@@ -34,7 +34,7 @@ def game():
 # Empty list to store user answers
     
     for i in range(len(Ques)):
-        sr.write("----------------------")
+        st.write("----------------------")
         st.write(Ques[i])
         for j in Answers[Ques_num]:
             ans = st.text_input("Enter your choice (A/B/C/D): ",key = i) 
@@ -62,7 +62,7 @@ def game():
     if AL[9] == 'B' or AL[9] == "b":
         Score += 1
 
-    st.write(f"\nYou scored {Score} out of {len(Ques)}")
+    #st.write(f"\nYou scored {Score} out of {len(Ques)}")
 
     if Score == 10:
         st.balloons()
@@ -80,12 +80,12 @@ def game():
         st.write("Better Luck next time....")
    
     # game()
-    st.write(f"✅ You scored {Score} out of {len(ques)}")
+    st.write(f"✅ You scored {Score} out of {len(Ques)}")
     st.write("Correct answers is : C, D, B, C, B, D, C, A, B, B")
     st.write("\nYour Answers:", AL)
-st.sidebar.markdown("RESET MENU")
-opt = st.sidebar.button("Reset Quiz")
 game()
+# st.sidebar.markdown("RESET MENU")
+# opt = st.sidebar.button("Reset Quiz")
 # game()
 # if opt==1:
 #     AL.clear()
