@@ -36,31 +36,34 @@ def game():
     for i in range(len(Ques)):
         st.write("----------------------")
         st.write(Ques[i])
-        for j in Answers[Ques_num]:
-            ans = st.text_input("Enter your choice (A/B/C/D): ",key = i) 
-            AL.append(ans)
-            st.write("<---------------------->")
-        
-    if AL[0] == 'C' or AL[0] == "c":
-        Score += 1
-    if AL[1] == 'D' or AL[1] == "d":
-        Score += 1
-    if AL[2] == 'B' or AL[2] == "b":
-        Score += 1
-    if AL[3] == 'C' or AL[3] == "c":
-        Score += 1
-    if AL[4] == 'B' or AL[4] == "b":
-        Score += 1
-    if AL[5] == 'D' or AL[5] == "d":
-        Score += 1
-    if AL[6] == 'C' or AL[6] == "c":
-        Score += 1
-    if AL[7] == 'A' or AL[7] == "a":
-        Score += 1
-    if AL[8] == 'B' or AL[8] == "b":
-        Score += 1
-    if AL[9] == 'B' or AL[9] == "b":
-        Score += 1
+        for j in Answers[i]:
+            st.write(Answers)
+        ans = st.text_input("Enter your choice (A/B/C/D): ",key = i) 
+        AL.append(ans)
+        st.write("<---------------------->")
+
+    if st.button("Submit Quiz"):
+        Score = 0
+        if AL[0] == 'C' or AL[0] == "c":
+            Score += 1
+        if AL[1] == 'D' or AL[1] == "d":
+            Score += 1
+        if AL[2] == 'B' or AL[2] == "b":
+            Score += 1
+        if AL[3] == 'C' or AL[3] == "c":
+            Score += 1
+        if AL[4] == 'B' or AL[4] == "b":
+            Score += 1
+        if AL[5] == 'D' or AL[5] == "d":
+            Score += 1
+        if AL[6] == 'C' or AL[6] == "c":
+            Score += 1
+        if AL[7] == 'A' or AL[7] == "a":
+            Score += 1
+        if AL[8] == 'B' or AL[8] == "b":
+            Score += 1
+        if AL[9] == 'B' or AL[9] == "b":
+            Score += 1
 
     #st.write(f"\nYou scored {Score} out of {len(Ques)}")
 
