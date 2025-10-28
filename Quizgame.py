@@ -36,10 +36,10 @@ def game():
     for i in range(len(Ques)):
         sr.write("----------------------")
         st.write(Ques[i])
-        for j in Answers[Ques_num] 
-        ans = st.text_input("Enter your choice (A/B/C/D): ",key = i) 
-        AL.append(ans)
-        st.write("<---------------------->")
+        for j in Answers[Ques_num]:
+            ans = st.text_input("Enter your choice (A/B/C/D): ",key = i) 
+            AL.append(ans)
+            st.write("<---------------------->")
         
     if AL[0] == 'C' or AL[0] == "c":
         Score += 1
