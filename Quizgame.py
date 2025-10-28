@@ -2,7 +2,7 @@
 import  streamlit as st
 st.title("🎯 Simple Quiz Game")
 st.write("Welcome to the quiz game...")
-
+AL = []
     
 def game():
 
@@ -28,7 +28,7 @@ def game():
               ("A) Elephant", "B) Blue Whale", "C) Giraffe", "D) Shark"),
               ("A) Holi", "B) Diwali", "C) Eid", "D) Christmas"))
     
-    AL = []
+    
     Score = 0
     Ques_num = 0
     
@@ -93,7 +93,7 @@ def game():
         st.write("\nYour Answers:", AL)
 st.sidebar.markdown("RESET MENU")
 opt = st.sidebar.button("Reset Quiz")
-if opt==1:
+if opt = true:
      AL.clear()
      game()
 game()
