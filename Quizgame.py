@@ -16,16 +16,17 @@ def game():
             "Q8: What is the capital of India?",
             "Q9: Which is the largest animal on Earth?",
             "Q10: Which festival is known as the festival of lights?")
-    Answers = (("A) d", "B) e", "C) a", "D) f"),
-              ("A) Duck", "B) Hen", "C) Owl", "D) Whale"),
-              ("A) Indian ocean", "B) Pacific ocean", "C) Arctic ocean", "D) Atlantic ocean"),
-              ("A) Fox", "B) Cow", "C) Tiger", "D) Cat"),
-              ("A) 4", "B) 7", "C) 8", "D) 9"),
-              ("A) Earth", "B) Saturn", "C) Jupiter", "D) Mars"),
-              ("A) Oxygen", "B) Nitrogen", "C) Carbon Dioxide", "D) Hydrogen"),
-              ("A) Delhi", "B) Mumbai", "C) Kolkata", "D) Chennai"),
-              ("A) Elephant", "B) Blue Whale", "C) Giraffe", "D) Shark"),
-              ("A) Holi", "B) Diwali", "C) Eid", "D) Christmas"))
+    
+    Answers = ("A) d", "B) e", "C) a", "D) f",
+              "A) Duck", "B) Hen", "C) Owl", "D) Whale",
+              "A) Indian ocean", "B) Pacific ocean", "C) Arctic ocean", "D) Atlantic ocean",
+              "A) Fox", "B) Cow", "C) Tiger", "D) Cat",
+              "A) 4", "B) 7", "C) 8", "D) 9",
+              "A) Earth", "B) Saturn", "C) Jupiter", "D) Mars",
+              "A) Oxygen", "B) Nitrogen", "C) Carbon Dioxide", "D) Hydrogen",
+              "A) Delhi", "B) Mumbai", "C) Kolkata", "D) Chennai",
+              "A) Elephant", "B) Blue Whale", "C) Giraffe", "D) Shark",
+              "A) Holi", "B) Diwali", "C) Eid", "D) Christmas")
     
     AL = []
     Score = 0
