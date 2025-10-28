@@ -34,16 +34,16 @@ def game():
     
 # Empty list to store user answers
     for i in range(len(Ques)):
-    st.write("----------------------")
-    st.write(Ques[i])
+        st.write("----------------------")
+        st.write(Ques[i])
     
     # Show each option one by one
-    for opt in Answers[i]:
-        st.write(opt)
+        for opt in Answers[i]:
+            st.write(opt)
     
     # Take user answer
-    ans = st.text_input(f"Enter your choice (A/B/C/D) for Q{i+1}:", key=f"q{i}")
-    AL.append(ans)
+        ans = st.text_input(f"Enter your choice (A/B/C/D) for Q{i+1}:", key=f"q{i}")
+        AL.append(ans)
 
 
     # for i in range(len(Ques)):
