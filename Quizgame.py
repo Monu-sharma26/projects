@@ -62,7 +62,7 @@ def game():
     if AL[9] == 'B' or AL[9] == "b":
         Score += 1
 
-    st.write(f"\nYou scored {Score} out of {len(ques)}")
+    st.write(f"\nYou scored {Score} out of {len(Ques)}")
 
     if Score == 10:
         st.balloons()
@@ -87,8 +87,8 @@ st.sidebar.markdown("RESET MENU")
 opt = st.sidebar.button("Reset Quiz")
 game()
 # game()
-if opt==1:
-    AL.clear()
-    game()
+# if opt==1:
+#     AL.clear()
+#     game()
     
      
