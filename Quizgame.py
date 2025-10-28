@@ -46,15 +46,7 @@ def game():
         AL.append(ans)
 
 
-    # for i in range(len(Ques)):
-    #     st.write("----------------------")
-    #     st.write(Ques[i])
-    #     for j in Answers[i]:
-    #         st.write(Answers)
-    #     ans = st.text_input("Enter your choice (A/B/C/D): ",key = i) 
-    #     AL.append(ans)
-    #     st.write("<---------------------->")
-
+    
     if st.button("Submit Quiz"):
         
         if AL[0] == 'C' or AL[0] == "c":
@@ -80,25 +72,25 @@ def game():
 
     #st.write(f"\nYou scored {Score} out of {len(Ques)}")
 
-    if Score == 10:
-        st.balloons()
-        st.success("Outstanding! You’re the topper of this quiz!")
-    elif Score == 9:
-        st.balloons()
-        st.success("Excellent performance! Keep it up!")
-    elif Score == 8:
-        st.info("You have passed the Quiz with 8 points and got Third position")
-    elif Score == 7:
-        st.info("You have passed the Quiz with 7 points and got Fourth position")
-    elif Score == 6:
-        st.info("You passed the quiz. Good effort!")
-    else:
-        st.warning("Better Luck next time....")
+        if Score == 10:
+            st.balloons()
+            st.success("Outstanding! You’re the topper of this quiz!")
+        elif Score == 9:
+            st.balloons()
+            st.success("Excellent performance! Keep it up!")
+        elif Score == 8:
+            st.info("You have passed the Quiz with 8 points and got Third position")
+        elif Score == 7:
+            st.info("You have passed the Quiz with 7 points and got Fourth position")
+        elif Score == 6:
+            st.info("You passed the quiz. Good effort!")
+        else:
+            st.warning("Better Luck next time....")
    
     # game()
-    st.write(f"✅ You scored {Score} out of {len(Ques)}")
-    st.write("Correct answers is : C, D, B, C, B, D, C, A, B, B")
-    st.write("\nYour Answers:", AL)
+        st.write(f"✅ You scored {Score} out of {len(Ques)}")
+        st.write("Correct answers is : C, D, B, C, B, D, C, A, B, B")
+        st.write("\nYour Answers:", AL)
 game()
 # st.sidebar.markdown("RESET MENU")
 # opt = st.sidebar.button("Reset Quiz")
