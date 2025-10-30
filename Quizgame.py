@@ -95,10 +95,10 @@ def game():
 with st.sidebar:
     st.markdown("### 🔁 Reset Menu")
     if st.button("🔄 Reset Quiz"):
-        AL.clear()  # clear your answers list
-        for key in st.session_state.keys():
-            del st.session_state[key]  # ✅ clear all stored inputs
-        st.rerun()  # ✅ restart the app fresh
+        AL.clear()
+        for key in list(st.session_state.keys()):
+            del st.session_state[key]
+        st.rerun()
 
 # st.sidebar.markdown("### 🔁 RESET MENU")
 
