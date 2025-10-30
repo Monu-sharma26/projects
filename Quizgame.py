@@ -102,7 +102,7 @@ if opt == True:
 #     game()
 #     st.session_state.clear()
 #     st.rerun()
- game()
+game()
  
  
     
