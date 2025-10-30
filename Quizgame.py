@@ -92,13 +92,23 @@ def game():
         st.write("Correct answers is : C, D, B, C, B, D, C, A, B, B")
         st.write("\nYour Answers:", AL)
 
-st.sidebar.markdown("RESET MENU")
+
+st.sidebar.markdown("### 🔁 RESET MENU")
+
 opt = st.sidebar.button("🔄 Reset Quiz")
-if opt == True:
-    AL.clear()
-    game()
-    st.session_state.clear()
-    st.rerun()
+if opt:
+    AL.clear()  # ✅ Correct syntax: use parentheses, not []
+    st.session_state.clear()  # ✅ Clear all session data
+    st.rerun()  # ✅ Restart the app
+
+
+# st.sidebar.markdown("RESET MENU")
+# opt = st.sidebar.button("🔄 Reset Quiz")
+# if opt == True:
+#     AL.clear[]
+#     game()
+#     st.session_state.clear()
+#     st.rerun()
 game()
  
  
