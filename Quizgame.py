@@ -1,4 +1,4 @@
-# List of 10 questions
+ # List of 10 questions
 import  streamlit as st
 st.title("🎯 Simple Quiz Game")
 st.write("Welcome to the quiz game...")
@@ -96,7 +96,7 @@ def game():
 st.sidebar.markdown("### 🔁 RESET MENU")
 
 opt = st.sidebar.button("🔄 Reset Quiz")
-if opt:
+if opt == True:
     AL.clear()  # ✅ Correct syntax: use parentheses, not []
     st.session_state.clear()  # ✅ Clear all session data
     st.rerun()  # ✅ Restart the app
