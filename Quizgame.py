@@ -99,7 +99,7 @@ opt = st.sidebar.button("🔄 Reset Quiz")
 if opt == True:
     AL.clear()
     st.rerun()
-#     game()
+#      ()
 #     st.session_state.clear()
 #     st.rerun()
 game()
