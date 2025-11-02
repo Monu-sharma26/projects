@@ -5,7 +5,6 @@ st.write("Welcome to the quiz game...")
 AL = []
     
 def game():
-
     Ques = ( "Q1: First Alphabet of English language..?",
             "Q2: Which of these is a mammal..?",
             "Q3: Which is the largest ocean in the world?",
