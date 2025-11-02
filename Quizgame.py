@@ -105,7 +105,7 @@ else:
 #      ()
 #     st.session_state.clear()
 #     st.rerun()
-game()
+# game()
  
  
     
